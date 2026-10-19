@@ -303,6 +303,27 @@ Speaker classification complements WER and speaker-embedding similarity. These m
 
 For a complete evaluation, consider reporting the number of speakers, the number of evaluated recordings, overall accuracy, per-speaker performance, and the dataset split used.
 
+### 4. Speaker Classification
+
+Speaker classification evaluates whether generated audio is assigned to the correct speaker identity.
+
+**Classification Accuracy: 83.38%**
+
+The speaker classification model achieved an accuracy of **83.38%** on the evaluated dataset, indicating that approximately 83 out of every 100 evaluated samples were classified correctly.
+
+The repository includes a confusion-matrix file:
+
+`data/evaluation/speaker_confusion_matrix.csv`
+
+A confusion matrix compares true speaker labels with predicted labels:
+
+- **Diagonal values** represent correct classifications.
+- **Off-diagonal values** represent cases where the model predicted a different speaker.
+
+Speaker classification complements WER and speaker-embedding similarity. These metrics measure different aspects of generated audio and should not be treated as interchangeable.
+
+For a complete evaluation, consider reporting the number of speakers, number of evaluated recordings, per-speaker performance, and the dataset split used. The 83.38% accuracy should be interpreted in the context of the evaluation dataset and should not be assumed to represent performance on unseen speakers or recording conditions.
+
 ## Limitations and Future Work
 
 - **Dataset coverage:** Results depend on the speakers, languages, recording conditions, and synthetic-audio sources represented in the data.
