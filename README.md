@@ -48,7 +48,10 @@ VCFAD/
 ├── .gitignore
 ├── data/
 │   └── evaluation/
-│       └── speaker_confusion_matrix.csv
+│       ├── vc_wer_results.csv
+|       ├── vc_test_manifest.csv
+|       ├── speaker_classification_results.csv
+|       └── speaker_confusion_matrix.csv
 ├── fake_audio_detector/
 │   ├── dataset.ipynb
 │   ├── dataset.py
@@ -59,7 +62,9 @@ VCFAD/
 │   ├── train.ipynb
 │   └── evaluate.ipynb
 ├── models/
-│   ├── accuracy_curve.png
+│   ├── fake_audio_detector.pt
+|   ├── speaker_classifier.pt
+|   ├── accuracy_curve.png
 │   └── loss_curve.png
 └── voice_cloning/
     ├── EDA.ipynb
